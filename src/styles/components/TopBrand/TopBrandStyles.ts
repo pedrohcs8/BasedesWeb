@@ -4,6 +4,7 @@ export const BrandContainer = styled.div`
   display: flex;
   align-items: center;
   height: 60px;
+  width: 280px;
   margin-top: 60px;
   margin-left: 40px;
   cursor: pointer;

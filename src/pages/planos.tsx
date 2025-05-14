@@ -18,11 +18,11 @@ export default function Teste() {
 
   return (
     <div>
-      <PageContainer image={plansBg}>
+      <PageContainer image={"/assets/plans.png"}>
         <TopBrand callback={() => teste()} />
       </PageContainer>
 
-      <PageContainer image={paymentBg}>
+      <PageContainer image={"/assets/payment.png"}>
       </PageContainer>
     </div>
   );
