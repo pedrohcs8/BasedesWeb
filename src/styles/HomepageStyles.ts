@@ -9,18 +9,49 @@ interface spacerProps {
   height: string
 }
 
+interface sideTitleProps {
+  color: string
+}
+
 export const PageContainer = styled.div<pageContainerProps>`
   display: flex;
   height: 100vh;
   width: auto;
-  background-image: ${(props) => `url(${props.image})`};
-  background-size: cover
+  background-color: #101728
 `
 
-export const PromoContainer = styled.div`
+export const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100vw
+`
+
+export const HomepageContainer = styled.div`
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+
+  @media (max-width: 950px) {
+    flex-direction: column
+  }
+`
+
+export const HomepageIntroContainer = styled(FlexContainer)`
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+
+  @media (max-width: 950px) {
+    flex-direction: column
+  }
+`
+
+export const HomepageIntroImage = styled.img`
+  height: 450px;
+  width: 450px;
+  margin-top: 120px;
+  margin-left: 20px;
+  border-radius: 20%;
 `
 
 export const PlansButton = styled.button`
@@ -35,8 +66,54 @@ export const PlansButton = styled.button`
   font-weight: 80%;
   border: transparent;
   cursor: pointer;
+
+  @media (max-width: 950px) {
+    margin-left: 50px;
+  }
 `
 
 export const Spacer = styled.div<spacerProps>`
   height: ${(props) => props.height}
+`
+
+export const SideText = styled.p`
+  color: white;
+  margin-top: 80px;
+  font-size: 42px;
+
+  @media (max-width: 1200px) {
+    font-size: 24px;
+  }
+`
+
+export const SideImage = styled.img`
+  height: 500px;
+  width: 500px;
+  margin-top: 120px;
+  margin-left: 20px;
+  border-radius: 20%;
+
+  @media (max-width: 950px) {
+    display: none
+  }
+`
+
+export const SideTitle = styled.h1<sideTitleProps>`
+  margin-top: 120px;
+  font-size: 58px;
+  color: ${(props) => props.color}
+`
+
+export const IntroTitle = styled.p`
+  font-size: 56px;
+  color: white;
+  text-align: center;
+  width: auto;
+  max-width: 1250px;
+  line-height: 1.5;
+  margin-top: 100px;
+
+  @media (max-width: 1200px) {
+    font-size: 28px;
+  }
 `

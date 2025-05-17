@@ -1,5 +1,5 @@
 import { BrandContainer, HostText, HostImage } from "./TopBrandStyles.ts"
-import hostIcon from '../../../assets/basedesBG.png'
+import hostIcon from '../../../../public/assets/basedesBG.png'
 
 interface propsI {
   callback: any
