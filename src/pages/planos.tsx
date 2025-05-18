@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from 'next/navigation'
 
 import styles from "@/styles/Home.module.css";
-import { PageContainer } from "../styles/HomepageStyles.ts"
+import { PageContainerImage } from "../styles/HomepageStyles.ts"
 import { TopBrand } from '../styles/components/TopBrand/TopBrand.tsx'
 
 import plansBg from "../assets/plans.png"
@@ -18,12 +18,12 @@ export default function Teste() {
 
   return (
     <div>
-      <PageContainer image={"/assets/plans.png"}>
+      <PageContainerImage image={"/assets/plans.png"}>
         <TopBrand callback={() => teste()} />
-      </PageContainer>
+      </PageContainerImage>
 
-      <PageContainer image={"/assets/payment.png"}>
-      </PageContainer>
+      <PageContainerImage image={"/assets/payment.png"}>
+      </PageContainerImage>
     </div>
   );
 }

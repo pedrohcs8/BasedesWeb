@@ -9,11 +9,23 @@ interface sideTitleProps {
   color: string
 }
 
+interface pageContainerProps {
+  image: string
+}
+
 export const PageContainer = styled.div`
   display: flex;
   height: 100vh;
   width: auto;
   background-color: #101728
+`
+
+export const PageContainerImage = styled.div<pageContainerProps>`
+  display: flex;
+  height: 100vh;
+  width: auto;
+  background-image: ${(props) => `url(${props.image})`};
+  background-size: cover;
 `
 
 export const FlexContainer = styled.div`
