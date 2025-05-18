@@ -13,7 +13,8 @@ import {
   Spacer,
   HomepageContainer,
   HomepageIntroContainer,
-  HomepageIntroImage
+  HomepageIntroImage,
+  IntroSubtitle
 } from "../styles/HomepageStyles.ts"
 
 import { TopBrand } from '../styles/components/TopBrand/TopBrand.tsx'
@@ -26,33 +27,33 @@ export default function Home() {
 
   return (
     <div>
-      <PageContainer style={{ flexDirection: 'column' }} image={'/assets/contact.png'}>
-        <HomepageContainer style={{ display: 'flex', width: '100vw', justifyContent: 'space-between' }}>
+      <PageContainer style={{ flexDirection: 'column' }}>
+        <HomepageContainer>
           <TopBrand callback={() => push('/')} />
           <PlansButton onClick={() => push('/planos')}>Ver Planos</PlansButton>
         </HomepageContainer>
-        <HomepageIntroContainer style={{ alignItems: 'center', justifyContent: 'space-around', height: '100vh', marginTop: '20px' }}>
+        <HomepageIntroContainer>
           <h1 style={{ color: 'white', fontSize: '80px', width: '500px', textAlign: 'center' }}>Host Em Ascenção</h1>
-          <HomepageIntroImage style={{ marginTop: '80px' }} src={'/assets/homepage-sideimage.png'} />
+          <HomepageIntroImage src={'/assets/homepage-sideimage.png'} />
         </HomepageIntroContainer>
       </PageContainer>
 
-      <PageContainer image={"/assets/contact.png"}>
+      <PageContainer>
         <FlexContainer style={{ alignItems: 'center', flexDirection: 'column' }}>
           <IntroTitle>
             A
-            <span style={{ color: '#9340ff', marginLeft: '8px', marginRight: '8px', fontWeight: 'bold' }}>Basedes</span>
+            <IntroSubtitle color="#9340ff">Basedes</IntroSubtitle>
             é uma pequena
-            <span style={{ color: '#a5cacd', marginLeft: '8px', marginRight: '8px', fontWeight: 'bold' }}>host de Minecraft</span>
+            <IntroSubtitle color="#a5cacd">host de Minecraft</IntroSubtitle>
             que busca tornar a criação de servidores simples e acessível.
           </IntroTitle>
           <Spacer height="40px" />
-          <IntroTitle style={{ width: 'auto', maxWidth: '1200px' }}>Nosso Discord oferece uma forma fácil, rápida e segura de criar servidores.
+          <IntroTitle>Nosso Discord oferece uma forma fácil, rápida e segura de criar servidores.
 Seja você iniciante ou já experiente, a Basedes está aqui para oferecer suporte a todos.</IntroTitle>
         </FlexContainer>
       </PageContainer>
 
-      <PageContainer image={"/assets/contact.png"}>
+      <PageContainer>
         <div style={{ marginLeft: '40px' }}>
           <SideTitle color="#9340ff">Como Funciona?</SideTitle>
 
@@ -63,7 +64,7 @@ Seja você iniciante ou já experiente, a Basedes está aqui para oferecer supor
         <SideImage src={'/assets/bot-sideimage.png'} />
       </PageContainer>
 
-      <PageContainer image={"/assets/contact.png"}>
+      <PageContainer>
         <FlexContainer>
             <SideImage src={'/assets/trust-sideimage.png'} />
             <div style={{ marginLeft: '40px' }}>
@@ -76,7 +77,7 @@ Seja você iniciante ou já experiente, a Basedes está aqui para oferecer supor
         </FlexContainer>
       </PageContainer>
 
-      <PageContainer image={"/assets/contact.png"}>
+      <PageContainer>
         <div>
           <FlexContainer>
             <SideTitle color="#9340ff">Companheiros de Aventura</SideTitle>
@@ -93,7 +94,7 @@ Seja você iniciante ou já experiente, a Basedes está aqui para oferecer supor
         </div>
       </PageContainer>
 
-      <PageContainer image={"/assets/contact.png"}>
+      <PageContainer>
         <div style={{ width: '100vw' }}>
           <TopBrand callback={() => push('/')} />
           <Contacts />

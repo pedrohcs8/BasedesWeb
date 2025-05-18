@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 import { StaticImageData } from 'next/image'
 
-interface pageContainerProps {
-  image: string
-}
-
 interface spacerProps {
   height: string
 }
@@ -13,7 +9,7 @@ interface sideTitleProps {
   color: string
 }
 
-export const PageContainer = styled.div<pageContainerProps>`
+export const PageContainer = styled.div`
   display: flex;
   height: 100vh;
   width: auto;
@@ -40,6 +36,7 @@ export const HomepageIntroContainer = styled(FlexContainer)`
   align-items: center;
   justify-content: space-around;
   height: 100vh;
+  margin-top: 20px;
 
   @media (max-width: 950px) {
     flex-direction: column
@@ -109,11 +106,18 @@ export const IntroTitle = styled.p`
   color: white;
   text-align: center;
   width: auto;
-  max-width: 1250px;
+  max-width: 1200px;
   line-height: 1.5;
   margin-top: 100px;
 
   @media (max-width: 1200px) {
     font-size: 28px;
   }
+`
+
+export const IntroSubtitle = styled.span<sideTitleProps>`
+  color: ${(props) => props.color};
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: bold
 `
