@@ -59,7 +59,7 @@ Seja você iniciante ou já experiente, a Basedes está aqui para oferecer supor
 
       <PageContainer>
         <CenteringContainer style={{ justifyContent: 'space-between', alignItems: 'center' }}>
-          <div style={{ marginLeft: '40px' }}>
+          <div>
             <SideTitle color="#9340ff">Como Funciona?</SideTitle>
 
             <SideText>A Basedes funciona de forma prática: você cria seu servidor direto pelo Discord, e ele fica disponível 24h por dia, sem complicação.</SideText>
@@ -71,9 +71,9 @@ Seja você iniciante ou já experiente, a Basedes está aqui para oferecer supor
       </PageContainer>
 
       <PageContainer>
-        <CenteringContainer style={{ justifyContent: 'space-around', alignItems: 'center' }}>
+        <CenteringContainer style={{ justifyContent: 'space-between', alignItems: 'center' }}>
           <SideImage src={'/assets/trust-sideimage.png'} />
-          <div style={{ marginLeft: '40px' }}>
+          <div>
             <SideTitle color="#a5cacd">Confiança</SideTitle>
 
             <SideText>Confiamos em nossos clientes assim como eles confiam na Basedes. Acreditamos no uso responsável dos servidores, priorizando sempre a segurança e o bem-estar da comunidade.</SideText>

@@ -15,7 +15,7 @@ interface pageContainerProps {
 
 export const PageContainer = styled.div`
   display: flex;
-  height: 120vh;
+  height: 115vh;
   width: 100vw;
   justify-content: center;
   background-color: #101728
@@ -64,14 +64,14 @@ export const HomepageIntroContainer = styled(FlexContainer)`
 `
 
 export const HomepageIntroImage = styled.img`
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 400px;
   border-radius: 20%;
 `
 
 export const PlansButton = styled.button`
   border-radius: 20px 20px;
-  height: 60px;
+  height: 50px;
   width: 250px;
   margin-top: 50px;
   margin-right: 40px;
@@ -93,22 +93,21 @@ export const Spacer = styled.div<spacerProps>`
 
 export const SideText = styled.p`
   color: white;
-  margin-top: 45px;
-  font-size: 42px;
+  margin-top: 40px;
+  font-size: 24px;
   text-align: justify;
   max-width: 1000px;
   line-height: 1.8;
 
   @media (max-width: 1400px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 `
 
 export const SideImage = styled.img`
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
   margin-top: 120px;
-  margin-left: 20px;
   border-radius: 20%;
 
   @media (max-width: 950px) {
@@ -118,12 +117,16 @@ export const SideImage = styled.img`
 
 export const SideTitle = styled.h1<sideTitleProps>`
   margin-top: 120px;
-  font-size: 58px;
-  color: ${(props) => props.color}
+  font-size: 50px;
+  color: ${(props) => props.color};
+
+@media (max-width: 1200px) {
+    text-align: center
+  }
 `
 
 export const IntroTitle = styled.p`
-  font-size: 45px;
+  font-size: 40px;
   color: white;
   text-align: center;
   width: auto;
@@ -132,7 +135,7 @@ export const IntroTitle = styled.p`
   margin-top: 100px;
 
   @media (max-width: 1200px) {
-    font-size: 38px;
+    font-size: 35px;
   }
 `
 

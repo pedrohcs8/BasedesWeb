@@ -5,7 +5,7 @@ export const ContactsContainer = styled.div`
   height: 400px;
   float: right;
   margin-right: 100px;
-  margin-top: 250px;
+  margin-top: 350px;
 `
 
 export const IconsContainer = styled.div`
