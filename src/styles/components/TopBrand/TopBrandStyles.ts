@@ -5,9 +5,12 @@ export const BrandContainer = styled.div`
   align-items: center;
   height: 60px;
   width: 280px;
-  margin-top: 60px;
-  margin-left: 40px;
   cursor: pointer;
+  margin-top: 80px;
+
+  @media (max-width: 950px) {
+    height: 90px;
+  }
 `
 
 export const HostImage = styled.img`

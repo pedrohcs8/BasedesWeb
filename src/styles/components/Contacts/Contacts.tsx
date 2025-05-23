@@ -10,7 +10,6 @@ export function Contacts() {
   const { push } = useRouter()
 
   return (
-    <div style={{ width: '100%' }}>
       <ContactsContainer>
         <Title>Entre Em Contato</Title>
         <Spacer height="30px" />
@@ -20,6 +19,5 @@ export function Contacts() {
           <FaInstagram color="#fff" size={70} onClick={() => push(instagramLink)} style={{ cursor: 'pointer' }} />
         </IconsContainer>
       </ContactsContainer>
-    </div>
   )
 }

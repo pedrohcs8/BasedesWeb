@@ -15,7 +15,9 @@ import {
   HomepageIntroContainer,
   HomepageIntroImage,
   IntroSubtitle,
-  CenteringContainer
+  CenteringContainer,
+  HomepageIntroText,
+  SideTextContainer
 } from "../styles/HomepageStyles.ts"
 
 import { TopBrand } from '../styles/components/TopBrand/TopBrand.tsx'
@@ -28,21 +30,18 @@ export default function Home() {
 
   return (
     <div>
-      <PageContainer>
-        <CenteringContainer style={{ flexDirection: 'column' }}>
-          <HomepageTopContainer>
-            <TopBrand callback={() => push('/')} />
-            <PlansButton onClick={() => push('/planos')}>Ver Planos</PlansButton>
-          </HomepageTopContainer>
+      <PageContainer style={{ background: 'linear-gradient(to bottom, #121a2e, #1e293b);'}}>
+        <CenteringContainer style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }}>
+          <TopBrand callback={() => push('/')} />
 
           <HomepageIntroContainer>
-            <h1 style={{ color: 'white', fontSize: '80px', width: '500px', textAlign: 'center', lineHeight: '1.8' }}>Host Em Ascenção</h1>
+            <HomepageIntroText>Host Em Ascenção</HomepageIntroText>
             <HomepageIntroImage src={'/assets/homepage-sideimage.png'} />
           </HomepageIntroContainer>
         </CenteringContainer>
       </PageContainer>
 
-      <PageContainer>
+      <PageContainer style={{ background: '#0f172a' }}>
         <CenteringContainer style={{ alignItems: 'center', flexDirection: 'column' }}>
           <IntroTitle>
             A
@@ -57,54 +56,48 @@ Seja você iniciante ou já experiente, a Basedes está aqui para oferecer supor
         </CenteringContainer>
       </PageContainer>
 
-      <PageContainer>
+      <PageContainer style={{ background: '#0f172a' }}>
         <CenteringContainer style={{ justifyContent: 'space-between', alignItems: 'center' }}>
-          <div>
+          <SideTextContainer right="30px">
             <SideTitle color="#9340ff">Como Funciona?</SideTitle>
 
             <SideText>A Basedes funciona de forma prática: você cria seu servidor direto pelo Discord, e ele fica disponível 24h por dia, sem complicação.</SideText>
 
             <SideText>Assim que o pagamento é confirmado, seu servidor é ativado automaticamente em instantes, com acompanhamento de um atendente da Basedes para garantir que tudo ocorra bem. </SideText>
-          </div>
+          </SideTextContainer>
           <SideImage src={'/assets/bot-sideimage.png'} />
         </CenteringContainer>
       </PageContainer>
 
-      <PageContainer>
+      <PageContainer style={{ background: 'linear-gradient(to bottom, #121a2e, #1e293b);'}}>
         <CenteringContainer style={{ justifyContent: 'space-between', alignItems: 'center' }}>
           <SideImage src={'/assets/trust-sideimage.png'} />
-          <div>
+          <SideTextContainer left="30px">
             <SideTitle color="#a5cacd">Confiança</SideTitle>
 
             <SideText>Confiamos em nossos clientes assim como eles confiam na Basedes. Acreditamos no uso responsável dos servidores, priorizando sempre a segurança e o bem-estar da comunidade.</SideText>
 
             <SideText>No fim das contas, o mais importante é: que todo mundo se divirta, construa, explore e viva grandes aventuras. O resto a gente cuida só não esqueça de aproveitar cada bloco!</SideText>
-          </div>
+          </SideTextContainer>
         </CenteringContainer>
       </PageContainer>
 
-      <PageContainer>
-        <CenteringContainer>
-          <div>
-            <FlexContainer>
+      <PageContainer style={{ background: 'linear-gradient(to bottom, #121a2e, #1e293b);'}}>
+        <CenteringContainer style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'space-around' }}>
               <SideTitle color="#9340ff">Companheiros de Aventura</SideTitle>
-            </FlexContainer>
-            <FlexContainer>
               <Image
                 src={'/assets/channel.png'}
                 alt="canal do youtube" width={220}
                 height={200}
-                style={{ marginTop: '280px', cursor: 'pointer' }}
+                style={{ cursor: 'pointer' }}
                 onClick={() => push(youtubeLink)}
               />
-            </FlexContainer>
-          </div>
         </CenteringContainer>
       </PageContainer>
 
-      <PageContainer>
+      <PageContainer style={{ background: '#0f172a' }}>
         <CenteringContainer>
-          <div style={{ width: '100vw' }}>
+          <div style={{ width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'column' }}>
             <TopBrand callback={() => push('/')} />
             <Contacts />
           </div>
