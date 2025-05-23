@@ -18,4 +18,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 🇧🇷
 Este é o site da basedes [basedes.com](https://basedes.com), escrito com a framework next.js e hospedado em uma VPS (self-hosted)
-Totalmente open-source! Se voce tiver interesse, olhe o código fonte do bot também!
+Totalmente open-source! Se você tiver interesse, olhe o [código fonte do bot](https://github.com/pedrohcs8/BasedesBot) também!
