@@ -160,6 +160,17 @@ export const SideImage = styled.img`
   }
 `
 
+export const PartnerImage = styled.img`
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+
+  &:hover {
+    height: 250px;
+    width: 250px
+  }
+`
+
 export const SideTitle = styled.h1<sideTitleProps>`
   font-size: 50px;
   color: ${(props) => props.color};

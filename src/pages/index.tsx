@@ -17,10 +17,11 @@ import {
   IntroSubtitle,
   CenteringContainer,
   HomepageIntroText,
-  SideTextContainer
+  SideTextContainer,
+  PartnerImage
 } from "../styles/HomepageStyles.ts"
 
-import { TopBrand } from '../styles/components/TopBrand/TopBrand.tsx'
+import { TopBrand, BottomBrand } from '../styles/components/TopBrand/TopBrand.tsx'
 import { Contacts } from '../styles/components/Contacts/Contacts.tsx'
 
 const youtubeLink = "https://www.youtube.com/@omecadelux"
@@ -30,10 +31,11 @@ export default function Home() {
 
   return (
     <div>
+
+      <TopBrand callback={() => push('/')} />
+      <Spacer height="100px"/>
       <PageContainer style={{ background: 'linear-gradient(to bottom, #121a2e, #1e293b);'}}>
         <CenteringContainer style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }}>
-          <TopBrand callback={() => push('/')} />
-
           <HomepageIntroContainer>
             <HomepageIntroText>Host Em Ascenção</HomepageIntroText>
             <HomepageIntroImage src={'/assets/homepage-sideimage.png'} />
@@ -85,20 +87,14 @@ Seja você iniciante ou já experiente, a Basedes está aqui para oferecer supor
       <PageContainer style={{ background: 'linear-gradient(to bottom, #121a2e, #1e293b);'}}>
         <CenteringContainer style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'space-around' }}>
               <SideTitle color="#9340ff">Companheiros de Aventura</SideTitle>
-              <Image
-                src={'/assets/channel.png'}
-                alt="canal do youtube" width={220}
-                height={200}
-                style={{ cursor: 'pointer' }}
-                onClick={() => push(youtubeLink)}
-              />
+              <PartnerImage src={'/assets/channel.png'} onClick={() => push(youtubeLink)}/>
         </CenteringContainer>
       </PageContainer>
 
       <PageContainer style={{ background: '#0f172a' }}>
         <CenteringContainer>
           <div style={{ width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'column' }}>
-            <TopBrand callback={() => push('/')} />
+            <BottomBrand callback={() => push('/')} />
             <Contacts />
           </div>
         </CenteringContainer>
