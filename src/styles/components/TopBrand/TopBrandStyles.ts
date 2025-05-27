@@ -1,27 +1,17 @@
 import styled from 'styled-components'
 
-export const BottomBrandContainer = styled.div`
+
+export const TopBrandContainer = styled.div`
+  position: fixed;
   display: flex;
   align-items: center;
-  height: 60px;
-  width: 280px;
-  cursor: pointer;
-  margin-top: 80px;
-
-  @media (max-width: 950px) {
-    height: 90px;
-  }
-`
-
-export const TopBrandContainer = styled(BottomBrandContainer)`
-  position: fixed;
-  background-color: black;
-  opacity: 0.8;
-  width: 100%;
   justify-content: center;
+  height: 100px;
+  width: 100%;
+  cursor: pointer;
   padding: 20px 0px;
-  margin-top: 0px;
-  height: 100px
+  opacity: 0.8;
+  background-color: black;
 `
 
 export const HostImage = styled.img`

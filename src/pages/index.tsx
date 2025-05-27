@@ -21,7 +21,7 @@ import {
   PartnerImage
 } from "../styles/HomepageStyles.ts"
 
-import { TopBrand, BottomBrand } from '../styles/components/TopBrand/TopBrand.tsx'
+import { TopBrand } from '../styles/components/TopBrand/TopBrand.tsx'
 import { Contacts } from '../styles/components/Contacts/Contacts.tsx'
 
 const youtubeLink = "https://www.youtube.com/@omecadelux"
@@ -93,8 +93,7 @@ Seja você iniciante ou já experiente, a Basedes está aqui para oferecer supor
 
       <PageContainer style={{ background: '#0f172a' }}>
         <CenteringContainer>
-          <div style={{ width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexDirection: 'column' }}>
-            <BottomBrand callback={() => push('/')} />
+          <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <Contacts />
           </div>
         </CenteringContainer>

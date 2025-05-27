@@ -1,4 +1,4 @@
-import { TopBrandContainer, BottomBrandContainer, HostText, HostImage } from "./TopBrandStyles.ts"
+import { TopBrandContainer, HostText, HostImage } from "./TopBrandStyles.ts"
 import hostIcon from '../../../../public/assets/basedesBG.png'
 
 interface propsI {
@@ -13,14 +13,5 @@ export function TopBrand(props: propsI) {
           <HostText>Basedes</HostText>
         </div>
         </TopBrandContainer>
-  )
-}
-
-export function BottomBrand(props: propsI) {
-  return (
-      <BottomBrandContainer onClick={props.callback}>
-        <HostImage src={hostIcon.src} />
-        <HostText>Basedes</HostText>
-      </BottomBrandContainer>
   )
 }
